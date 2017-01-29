@@ -1,0 +1,35 @@
+---
+layout: default
+title:
+---
+
+<main role="main" class="wrapper"> <!-- main content starts here -->
+  <span class="button report-button">Report</span>
+  <div class="question-list">    
+  {% for i in site.data.data %}
+    <div id="" class="question">
+      <div class="question__content">
+        <h3>{{i.theme}}</h3>
+        <p>{{i.question}}</p>
+        <div class="question__controls">
+          <button class="button button--yes js-yes">YES</button>
+          <button class="button button--no js-no">NO</button>
+        </div>
+      </div>
+      <div class="guidance">
+        <p>{{i.guidance}}</p>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+  <div class="modal report">
+    {% for i in site.data.data %}
+      <div id="" class="report">
+        <h3>{{i.theme}}</h3>
+        <p>{{i.question}}</p>
+        <p>{{i.guidance}}</p>
+      </div>
+    {% endfor %}
+  </div>
+</main>
