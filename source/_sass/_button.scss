@@ -1,0 +1,40 @@
+.questionnaire-button {
+  padding: 15px;
+  width: 80px;
+  height: 80px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: transparent;
+
+  i.material-icons {
+    font-size: 3rem;
+  }
+  
+  &--yes { 
+
+    &.js-active {
+      background-color: $green;
+    }
+  }
+
+  &--no { 
+    color: white;
+
+    &.js-active {
+      color: white;
+      background-color: $red;
+    }
+  }
+}
+
+.button {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: 1px solid $main-color;
+  color: $main-color;
+  background-color: rgba($main-color, .1);
+}

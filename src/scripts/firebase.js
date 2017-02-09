@@ -10,11 +10,11 @@
 // and choosing a project you've created.  Then click the red HTML logo at the
 // top right of the page with the caption "Add Firebase to your web app".
 var config = {
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
-  storageBucket: "",
-  messagingSenderId: ""
+  apiKey: "AIzaSyBjFO28MohcglGGHFMkRxSrHvE_kjeAiXc",
+  authDomain: "bikangular.firebaseapp.com",
+  databaseURL: "https://bikangular.firebaseio.com",
+  storageBucket: "bikangular.appspot.com",
+  messagingSenderId: "481627292665"
 };
 firebase.initializeApp(config);
 

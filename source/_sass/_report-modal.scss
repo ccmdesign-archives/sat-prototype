@@ -1,0 +1,78 @@
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(white, .8);
+  display: none;
+  z-index: 110;
+}
+
+#overlay.js-active {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  top: 20px;
+  left: calc(50% - 450px);
+  width: 900px;
+  height: 90vh;
+  overflow-y: scroll;
+  z-index: 1000;
+  box-shadow: 2px 2px 12px rgba(black, .3);
+  background-color: white;
+  padding: 30px;
+}
+
+.modal.js-active { display: block; }
+body.js-modal-active {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.report-modal {
+  border: 1px solid $red;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1;
+    margin: 40px 0 0; 
+    color: $red;
+  }
+}
+
+.report {
+  border: 1px solid $red;
+  margin-top: 20px;
+
+  &__question {
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: darken($red, 8);
+    background-color: rgba($red, .1);
+    margin-top: 0;
+  }
+
+  &__guidance {
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    color: rgba(black, .8);
+  }
+  
+}
+
+.report--true { display: none; }
+.report--false {
+
+}
