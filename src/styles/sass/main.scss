@@ -1,6 +1,3 @@
----
----
-
 // Breakpoints
 $small-only: (max-width 40em);
 $medium: 40.063em 64em;
@@ -8,11 +5,8 @@ $touch: (max-width 64em);
 $medium-up: 40.063em;
 $large: 64.063em;
 
-// Colors
-// $main-color: ;
-
-
 @import 'breakpoint';
+@import 'splash';
 @import 'utils';
 @import 'base';
 

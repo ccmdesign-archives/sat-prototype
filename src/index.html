@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>SAT Prototype</title>
+
+  <link rel="stylesheet" href="styles/vendor/foundation.min.css">
+  <link rel="stylesheet" href="styles/vendor/slick.css"/>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Splash screen -->
+  <div id="js-splash" class="splash">
+    <h3 class="logo">SAT Prototype</h3>
+    <div>
+      <button id="js-sign-in-button" class="button">Sign in with Google</button>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main role="main" class="wrapper"> <!-- main content starts here -->
+    <span class="button report-button">Report</span>
+    <button id="js-sign-out-button" class="button report-button">Sign Out</button>
+    <div id="js-questions-list" class="question-list"></div>
+
+    <!-- # handlebars template -->
+    <script id="js-questions-template" type="text/x-handlebars-template">
+      {{#each questions}}
+        <div class="question {{#if answer}}question--{{answer}}{{/if}}" data-id="{{id}}">
+          <div class="question__content">
+            <h3>{{theme}}</h3>
+            <p>{{question}}</p>
+            <div class="question__controls">
+              <button class="button button--yes js-yes">YES</button>
+              <button class="button button--no js-no">NO</button>
+            </div>
+          </div>
+          <div class="guidance">
+          <p>{{guidance}}</p>
+          </div>
+        </div>
+      {{/each}}
+    </script>
+    <!-- / handlebars template -->
+
+  </main>
+
+  <!--<div id="overlay" class="js-overlay"></div>-->
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script src="/scripts/vendor/jquery-2.1.4.min.js"></script>
+  <script src="/scripts/vendor/handlebars.min.js"></script>
+  <script src="/scripts/vendor/slick.min.js"></script>
+  <script src="/scripts/firebase.js"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
+
+
+
