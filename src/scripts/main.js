@@ -1,39 +1,29 @@
 'use strict';
 
 $(document).ready(function () {
-    // $('.report-button').click(function() {
-    //   // var questions = $('.report');
-    //   // var a = 0;
-    //   // $.each(questions, function(){
-    //   //   $(this).attr('id', a);
-    //   //   console.log(a);
-    //   //   $('#' + a).addClass('report--' + answers[a])
-    //   //   a++;
-    //   // });
-
-    //   $('.modal').addClass('js-active');
-    //   $('#overlay').addClass('js-active');
-    // });
-
-    // $('#overlay').click(function() {
-    //   $('.modal').removeClass('js-active');
-    //   $('#overlay').removeClass('js-active');
-    // });
 
   // Event listeners
   // ---------------
 
   $('#js-questions-list').on('click', '.js-yes', function() {
-    var target = $(this).closest('.question');
-    target.addClass('question--yes').removeClass('question--no');
-    answerQuestion(target.data('id'), 'yes');
+    var target = $(this).closest('.question-item');
+    var sectionId = target.data('section-id');
+    var questionId = target.data('question-id');
+    target.addClass('question-yes').removeClass('question-no');
+    $('#js-map-dot-' + sectionId + '-' + questionId).removeClass('answered-no');
+    $('#js-map-dot-' + sectionId + '-' + questionId).addClass('answered-yes');
+    answerQuestion(sectionId, questionId, 'yes');
     return false;
   });
 
   $('#js-questions-list').on('click', '.js-no', function() {
-    var target = $(this).closest('.question');
-    target.addClass('question--no').removeClass('question--yes');
-    answerQuestion(target.data('id'), 'no');
+    var target = $(this).closest('.question-item');
+    var sectionId = target.data('section-id');
+    var questionId = target.data('question-id');
+    target.addClass('question-no').removeClass('question-yes');
+    $('#js-map-dot-' + sectionId + '-' + questionId).removeClass('answered-yes');
+    $('#js-map-dot-' + sectionId + '-' + questionId).addClass('answered-no');
+    answerQuestion(sectionId, questionId, 'no');
     return false;
   });
 
@@ -69,5 +59,5 @@ $(document).ready(function () {
 
 var cleanupUI = function() {
   // TODO: Cleanup firebase refs
-  $('.question-list').html('');
+  // $('.question-list').html('');
 }

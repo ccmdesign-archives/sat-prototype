@@ -1,66 +1,118 @@
 [
   {
-    "id": 0,
     "theme": "Project Description",
-    "rap_section": 1.2,
-    "question": "Does the FRAP provide a general description of the project",
-    "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe.",
-    "answer": ""
+    "questions": [
+      {
+        "question": "Does the FRAP provide a general description of the project",
+        "rap_section": 1.2,
+        "rap_page": 11,
+        "answer": "",
+        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+      },
+      {
+        "question": "Does the FRAP define the area of influence of the project",
+        "rap_section": 2.1,
+        "rap_page": 21,
+        "answer": "",
+        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+      },
+      {
+        "question": "Does the FRAP include appropriate maps pictorially locating the project area",
+        "rap_section": null,
+        "answer": "",
+        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+      }
+    ]
   },
   {
-    "id": 1,
-    "theme": "Project Description",
-    "rap_section": 2.3,
-    "question": "Does the FRAP define the area of influence of the project",
-    "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe.",
-    "answer": ""
+    "theme": "Valuation of, and compensation for, losses",
+    "questions": [
+      {
+        "question": "Does the FRAP detail the methodology to be used in valuing losses to determine their full replacement cost.",
+        "rap_section": 2.2,
+        "rap_page": 23,
+        "answer": "",
+        "guidance": "The FRAP should detail the methodology to be used in valuing losses to determine their full replacement cost."
+      },
+      {
+        "question": "Does the FRAP describe the proposed types and levels of compensation under local laws and the supplementary measures required to achieve full replacement cost for lost assets.",
+        "rap_section": null,
+        "answer": "",
+        "guidance": "The FRAP should  describe the proposed types and levels of compensation under local laws and the supplementary measures required to achieve full replacement cost for lost assets."
+      },
+      {
+        "question": "Is a certified professional valuator employed to value asset loss, at full replacement cost, and that such valuations are based upon a detailed local market evaluation study that is written up and justified appropriately in the FRAP.",
+        "rap_section": 3.2,
+        "rap_page": 24,
+        "answer": "",
+        "guidance": "It is crucial that a certified professional valuator is detailed local market evaluation study that is written up and justified appropriately in the FRAP. employed to value asset loss, at full replacement cost, and that such valuations are based upon a"
+      },
+      {
+        "question": "Does the FRAP describe in detail the packages of compensation and other resettlement measures which will be provided to ensure that standards of living, income-earning capacity, production levels and overall means of livelihood for all categories of eligible group are improved beyond pre-project levels.",
+        "rap_section": 3.3,
+        "rap_page": 27,
+        "answer": "",
+        "guidance": "The FRAP should describe in more detail the packages of compensation and other resettlement measures which will be provided to ensure that standards of living, income-earning capacity, production levels and overall means of livelihood for all categories of eligible group are improved beyond pre-project levels."
+      },
+      {
+        "question": "Does the FRAP include an an entitlements matrix that identifies – all categories of affected people; – all types of loss associated with each category; and – all options for the types of compensation and resettlement assistance to which each category is entitled.\n",
+        "rap_section": 4.1,
+        "rap_page": 30,
+        "answer": "",
+        "guidance": "The FRAP should summarize the compensation packages developed, in the form of an entitlements matrix that identifies: – all categories of affected people; – all types of loss associated with each category; and – all options for the types of compensation and resettlement assistance to which each category is entitled.\n"
+      },
+      {
+        "question": "Was the entitlements matrix  disclosed to the affected community and consulted on prior to the finalization of the FRAP. Where relevant, changes made to reflect the articulated views and concerns of the affected community, expressed during the entitlements matrix disclosure and consultation process.",
+        "rap_section": 4.2,
+        "rap_page": 32,
+        "answer": "",
+        "guidance": "Prior to the finalization of the FRAP, the entitlements matrix should be disclosed to the affected community and consulted on. Where relevant, changes should be made to the entitlements matrix to reflect the articulated views and concerns of the affected community, expressed during the entitlements matrix disclosure and consultation process."
+      }
+    ]
   },
   {
-    "id": 2,
-    "theme": "Project Description",
-    "rap_section": 3.4,
-    "question": "Does the FRAP include appropriate maps pictorially locating the project area",
-    "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe.",
-    "answer": ""
-  },
-  {
-    "id": 3,
     "theme": "Potential Impacts",
-    "rap_section": 4.5,
-    "question": "Does the FRAP describe the project components or activities that would give rise to involuntary resettlement, the zone of impact of such activities, and the alternatives considered to avoid or minimize involuntary resettlement.",
-    "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe.",
-    "answer": ""
+    "questions": [
+      {
+        "question": "Does the FRAP describe the project components or activities that would give rise to involuntary resettlement, the zone of impact of such activities, and the alternatives considered to avoid or minimize involuntary resettlement.",
+        "rap_section": 4.3,
+        "rap_page": 34,
+        "answer": "",
+        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+      },
+      {
+        "question": "Is the “avoid or minimize” process should be clearly and comprehensively demonstrated in the FRAP document",
+        "rap_section": 4.5,
+        "rap_page": 36,
+        "answer": "",
+        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+      }
+    ]
   },
   {
-    "id": 4,
-    "theme": "Potential Impacts",
-    "rap_section": 3.1,
-    "question": "Is the “avoid or minimize” process should be clearly and comprehensively demonstrated in the FRAP document",
-    "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe.",
-    "answer": ""
-  },
-  {
-    "id": 5,
     "theme": "Organizational Responsibility / Institutional Framework",
-    "rap_section": 3.1,
-    "question": "Does the FRAP detial the organizational responsibilites and instritutional framework",
-    "guidance": "The institutional arrangements within the FRAP executing agency, and the provision of adequate resources to this agency, should be discussed as early as possible, and this institutional framework, together with all associated interagency coordination, should be described in the FRAP.",
-    "answer": ""
-  },
-  {
-    "id": 6,
-    "theme": "Organizational Responsibility / Institutional Framework",
-    "rap_section": null,
-    "question": "Does the FRAP discuss if adequate resources available in the agencies to carry out the FRAP",
-    "guidance": "The capacity of the executing agency to implement the FRAP should be evaluated",
-    "answer": ""
-  },
-  {
-    "id": 7,
-    "theme": "Organizational Responsibility / Institutional Framework",
-    "rap_section": null,
-    "question": "Does the FRAP identify capacity building measures (with an associated timetable and budget) that will be taken to strengthen this executing agency\"",
-    "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe.",
-    "answer": ""
+    "questions": [
+      {
+        "question": "Does the FRAP detial the organizational responsibilites and instritutional framework",
+        "rap_section": 4.8,
+        "rap_page": 39,
+        "answer": "",
+        "guidance": "The institutional arrangements within the FRAP executing agency, and the provision of adequate resources to this agency, should be discussed as early as possible, and this institutional framework, together with all associated interagency coordination, should be described in the FRAP."
+      },
+      {
+        "question": "Does the FRAP discuss if adequate resources available in the agencies to carry out the FRAP",
+        "rap_section": 5.1,
+        "rap_page": 42,
+        "answer": "",
+        "guidance": "The capacity of the executing agency to implement the FRAP should be evaluated"
+      },
+      {
+        "question": "Does the FRAP identify capacity building measures (with an associated timetable and budget) that will be taken to strengthen this executing agency\"",
+        "rap_section": 5.2,
+        "rap_page": 44,
+        "answer": "",
+        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+      }
+    ]
   }
 ]

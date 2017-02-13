@@ -1,117 +1,240 @@
-$red: darken(red, 7);
-$green: darken(green, 7);
-$main-color: #4285f4;
-
-* {
-  box-sizing: border-box;
-}
+$main-color: #70aa00;
+$red: #E50037;
+$green: $main-color;
 
 body {
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: .4px;
 }
 
-p {
-  line-height: 1.6;
-  color: rgba(black, .8);
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.question-list {
-  max-width: 800px;
+.arrow {
+  position: fixed;
+  top: 200px;
+  cursor: pointer;
+  z-index: 5;
+  background-color: rgba($main-color, .2);
+  border: 1px solid $main-color;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 7px;
+
+  > .material-icons {
+    font-size: 3rem;
+    line-height: 1;
+    color: white;
+  }
+
+  &-prev {
+    left: 20px;
+    text-indent: -1px;
+  }
+
+  &-next {
+    right: 20px;
+    text-indent: 1px;
+  }
+}
+
+.top-bar {
+  display: flex;
+
+  h1,
+  .map {
+    flex: 1;
+  }
+}
+
+
+
+.wrapper {
+  width: 800px;
   margin: 0 auto;
 }
 
-.question {
-  box-shadow: 1px 1px 7px rgba(black, .2);
-  &__content {
-    padding: 20px 30px;
-    border: 1px solid $main-color;
-    margin-top: 20px;
-  }
-  
-  h3 {
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin: 0;
-    color: rgba($main-color, .4);
+.top-bar {
+  text-transform: uppercase;
+  background-color: $main-color;
+  box-shadow: 2px 0 16px rgba(black, .2);
+  position: relative;
+  z-index: 1;
 
+  h1 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: darken($main-color, 24);
+  }
+
+  .user {
+    float: right;
+    display: inline-block;
+    height: 57px;
+    width: 57px;
+    margin: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+}
+
+.map {
+  padding: 14px;
+  display: flex;
+  font-size: 10px;
+  line-height: 1.5;
+
+  &__column {
+    flex: 0;
+    text-align: center;
+
+    &.current {
+      background-color: rgba(white, .1);
+    }
+
+    .dot { display: inline-block; }
+    // .dot { display: block; }
+  }
+
+  .dot {
+    background-color: rgba(white, .4);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    margin: 3px 6px;
+    vertical-align: middle;
+
+    &.answered-yes {
+      height: 8px;
+      width: 8px;
+      background-color: white;
+    }
+
+    &.answered-no {
+      height: 7px;
+      width: 7px;
+      border: 1px solid white;
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+.section {
+  text-align: center;
+
+  h2 {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: darken($main-color, 14);
+  }
+}
+
+.question-item {
+  padding: 40px;
+  border-bottom: 1px solid rgba(black, .2);
+
+  &:first-of-type { border-top: 1px solid rgba(black, .2); }
+
+  &:nth-of-type(odd) { background-color: rgba(black, .03); }
+  &.question-yes {
+    background-color: rgba($green, .1);
+    border-bottom: 1px solid $green;
+  }
+
+  p {
+    font-weight: 200;
+  }
+
+  &.question-no {
+    background-color: rgba($red, .05);
+    border-bottom: 1px solid $red;
+    p {color: $red;}
   }
 }
 
 .guidance {
-  height: auto;
-  max-height: 0;
-  margin-bottom: 20px;
   overflow: hidden;
-  transition: all .6s ease;
+  max-height: 0;
+  // transition: max-height .5s ease;
 
-  > p {
-    padding: 20px 30px;
-    border: 1px solid $main-color;
-    border-top: 0;
-    margin: 0;
+  p { color: rgba(black, .4); }
+
+  input {
+    margin: 0 10px;
   }
+
 }
 
-.question--no {
-  .question__content { border-color: $red; }
-  .guidance p { border-color: $red; }
+.question-no .guidance-no {
+  max-height: 800px;
+  transition: max-height .5s ease;
 }
 
-.question--yes {
-  .question__content { border-color: $green; }
-  .guidance p { border-color: $green; }
+.question-yes .guidance-yes {
+  max-height: 800px;
+  transition: max-height .5s ease;
 }
 
-.question--no .guidance {
-  max-height: 500px;
-  transition: all .6s ease;
 
+.controls {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.question-yes .section-number {
+  max-width: 180px;
+  transition: max-width .5s ease;
 }
 
 .button {
-  padding: 8px 16px;
+  padding: 15px;
+  height: 56px;
   border: 1px solid rgba(black, .1);
-  border-radius: 0;
-  display: inline-block;
   text-transform: uppercase;
-  
-  &--yes { 
-    color: darken(green, 7);
-    background-color: rgba($green, .1); 
-  }
-  &--no { 
-    color: darken(red, 7);
-    background-color: rgba($red, .1); 
-  }
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
-#overlay {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(white, .8);
-  display: none;
-  z-index: 110;
-}
+.button:hover { transition: all .3s ease; }
 
-#overlay.js-active {
-  display: block;
-}
 
-.modal {
-  position: fixed;
-  display: none;
-  top: 20px;
-  left: 70px;
-  width: 800px;
-  z-index: 1000;
-  box-shadow: 2px 2px 12px rgba(black, .3);
-  background-color: white;
-  padding: 30px;
-}
+.button.green { background-color: rgba($green, .3); }
+.button.red { background-color: rgba($red, .3); }
 
-.modal.js-active {
-  display: block;
+.button.green:hover { background-color: rgba($green, .5); }
+.button.red:hover { background-color: rgba($red, .5); }
+
+.question-yes .button.green { background-color: $green; }
+.question-no .button.red { background-color: $red; }
+
+input[type="text"] {
+  padding: 13px;
 }

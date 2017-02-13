@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="styles/vendor/slick.css"/>
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
+  <script src="https://use.typekit.net/mvc3cdb.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
 <body>
@@ -23,31 +26,60 @@
   </div>
 
   <!-- Content -->
-  <main role="main" class="wrapper"> <!-- main content starts here -->
-    <span class="button report-button">Report</span>
-    <button id="js-sign-out-button" class="button report-button">Sign Out</button>
-    <div id="js-questions-list" class="question-list"></div>
-
-    <!-- # handlebars template -->
-    <script id="js-questions-template" type="text/x-handlebars-template">
-      {{#each questions}}
-        <div class="question {{#if answer}}question--{{answer}}{{/if}}" data-id="{{id}}">
-          <div class="question__content">
-            <h3>{{theme}}</h3>
-            <p>{{question}}</p>
-            <div class="question__controls">
-              <button class="button button--yes js-yes">YES</button>
-              <button class="button button--no js-no">NO</button>
+  <main role="main"> <!-- main content starts here -->
+    <div class="top-bar">
+      <h1>Self Assessment Tool</h1>
+      <div id="js-questions-map" class="map">
+        <!-- # handlebars template -->
+        <script id="js-map-template" type="text/x-handlebars-template">
+          {{#each questions}}
+            <div id="js-map-col-{{@index}}" class="map__column {{#if @first}}current{{/if}}">
+              {{#each questions}}
+                <span id="js-map-dot-{{@../index}}-{{@index}}" class="dot {{#if answer}}answered-{{answer}}{{/if}}" ></span>
+              {{/each}}
             </div>
-          </div>
-          <div class="guidance">
-          <p>{{guidance}}</p>
-          </div>
-        </div>
-      {{/each}}
-    </script>
-    <!-- / handlebars template -->
+          {{/each}}
+        </script>
+        <!-- / handlebars template -->
+      </div>
+      <a href="#" class="user" style="background-image: url('./images/paul.jpg')"></a>
+      <button id="js-sign-out-button" class="button report-button">Sign Out</button>
+    </div>
 
+    <div class="arrow arrow-prev"><i class="material-icons">keyboard_arrow_left</i></div>
+    <div class="arrow arrow-next"><i class="material-icons">keyboard_arrow_right</i></div>
+
+    <div id="js-questions-list" class="question-list">
+      <!-- # handlebars template -->
+      <script id="js-list-template" type="text/x-handlebars-template">
+        {{#each questions}}
+          <div id="{{@index}}" class="section">
+            <header class="section-header">
+              <h2>{{theme}}</h2>
+            </header>
+            {{#each questions}}
+              <div id="{{@../index}}-{{@index}}" class="question-item {{#if answer}}question-{{answer}}{{/if}}" data-question-id="{{@key}}" data-section-id="{{@../key}}">
+                <div class="question wrapper">
+                  <p>{{question}}</p>
+                </div>
+                <div class="controls">
+                  <button class="button green js-yes"><i class="material-icons">check</i></button>
+                  <button class="button red js-no"><i class="material-icons">close</i></button>
+                </div>
+                <div class="guidance guidance-no wrapper">
+                  <p>{{guidance}}</p>
+                </div>
+                <div class="guidance guidance-yes wrapper">
+                  <p>Add the section an/or the page</p>
+                  <input type="text" placeholder="Section Number"><input type="text" placeholder="Page Number">
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        {{/each}}
+      </script>
+      <!-- / handlebars template -->
+    </div>
   </main>
 
   <!--<div id="overlay" class="js-overlay"></div>-->

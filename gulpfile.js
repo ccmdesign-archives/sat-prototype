@@ -9,7 +9,6 @@ gulp.task('sass', function () {
     .pipe(sass({outputStyle: 'compressed'})).on('error', sass.logError)
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('src/styles'))
-    .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('watch', function () {
