@@ -225,7 +225,6 @@ body {
 
 .button:hover { transition: all .3s ease; }
 
-
 .button.green { background-color: rgba($green, .3); }
 .button.red { background-color: rgba($red, .3); }
 
@@ -237,4 +236,19 @@ body {
 
 input[type="text"] {
   padding: 13px;
+}
+
+.button2 {
+  padding: 10px 15px;
+  color: white;
+  border-radius: 0;
+  margin: 5px;
+  text-transform: uppercase;
+  height: 50px;
+  background-color: $main-color;
+  border: 1px solid rgba(white, .3);
+
+  &:hover {
+    background-color: lighten($main-color, 6);
+  }
 }
