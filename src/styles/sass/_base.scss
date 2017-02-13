@@ -247,6 +247,7 @@ input[type="text"] {
   height: 50px;
   background-color: $main-color;
   border: 1px solid rgba(white, .3);
+  text-decoration: none !important;
 
   &:hover {
     background-color: lighten($main-color, 6);
