@@ -40,13 +40,13 @@ $(document).ready(function () {
     if (user && currentUserId === user.uid) {
       return;
     }
-    cleanupUI();
 
     if (user) {  // User logged in
       currentUserId = user.uid;
       $('#js-splash').hide();
       upsertUser(user.uid, user.displayName, user.email, user.photoURL);
     } else {  // User logged out
+      cleanupUI();
       currentUserId = null;
       $('#js-splash').show();
     }
@@ -59,5 +59,10 @@ $(document).ready(function () {
 
 var cleanupUI = function() {
   // TODO: Cleanup firebase refs
-  // $('.question-list').html('');
+  $('#js-report').html('');
+  $('#js-questions-map').html('');
+  $('#js-questions-list').html('');
+  $('#js-questions-list').removeClass('slick-slider');
+  $('#js-questions-list').removeClass('slick-initialized');
+
 }

@@ -81,30 +81,45 @@ function upsertUser(id, name, email, photoUrl) {
 
 var loadQuestions = function(userId) {
   db.ref('users/' + userId + '/questions').once('value', function(snapshot) {
-    var source = $('#js-map-template').html();
-    var template = Handlebars.compile(source);
-    var context = {'questions': snapshot.val()}
-    var renderedHtml = template(context);
-    $('#js-questions-map').html(renderedHtml);
+    var renderedHtml;
+    var template;
+    var context;
+    var source;
 
-    source = $('#js-list-template').html();
-    template = Handlebars.compile(source);
-    context = {'questions': snapshot.val()}
-    renderedHtml = template(context);
-    $('#js-questions-list').html(renderedHtml);
+    if ($('#js-questions-map').length) {
+      source = $('#js-map-template').html();
+      template = Handlebars.compile(source);
+      context = {'questions': snapshot.val()}
+      renderedHtml = template(context);
+      $('#js-questions-map').html(renderedHtml);
 
-    $('#js-questions-list').slick({
-      arrows: true,
-      autoplay: false,
-      infinite: false,
-      prevArrow: '<div class="arrow arrow-prev"><i class="material-icons">keyboard_arrow_left</i></div>',
-      nextArrow: '<div class="arrow arrow-next"><i class="material-icons">keyboard_arrow_right</i></div>'
-    });
+      source = $('#js-list-template').html();
+      template = Handlebars.compile(source);
+      context = {'questions': snapshot.val()}
+      renderedHtml = template(context);
+      $('#js-questions-list').html(renderedHtml);
 
-    $('#js-questions-list').on('afterChange', function(slick, currentSlide) {
-      $('.current').removeClass('current');
-      $('#js-map-col-' + currentSlide.currentSlide).addClass('current');
-    });
+      $('#js-questions-list').slick({
+        arrows: true,
+        autoplay: false,
+        infinite: false,
+        prevArrow: '<div class="arrow arrow-prev"><i class="material-icons">keyboard_arrow_left</i></div>',
+        nextArrow: '<div class="arrow arrow-next"><i class="material-icons">keyboard_arrow_right</i></div>'
+      });
+
+      $('#js-questions-list').on('afterChange', function(slick, currentSlide) {
+        $('.current').removeClass('current');
+        $('#js-map-col-' + currentSlide.currentSlide).addClass('current');
+      });
+    }
+
+    if ($('#js-report').length) {
+      source = $('#js-report-template').html();
+      template = Handlebars.compile(source);
+      context = {'questions': snapshot.val()}
+      renderedHtml = template(context);
+      $('#js-report').html(renderedHtml);
+    }
   })
 };
 

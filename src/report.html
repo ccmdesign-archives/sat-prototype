@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>SAT Prototype</title>
+
+  <link rel="stylesheet" href="styles/vendor/foundation.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
+  <script src="https://use.typekit.net/mvc3cdb.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+  <main role="main"> <!-- main content starts here -->
+    <div class="top-bar">
+      <h1>Self Assessment Tool</h1>
+      <a href="#" class="user" style="background-image: url('./images/paul.jpg')"></a>
+    </div>
+    <table id="js-report" class="report"></table>
+    <!-- # handlebars template -->
+    <script id="js-report-template" type="text/x-handlebars-template">
+      <thead>
+        <th colspan="5">Report for Claudio Mendonca - Submitted on January, 20<sup>th</sup>, 2017</th>
+      </thead>
+
+      {{#each questions}}
+        <tr class="section-title">
+          <td></td>
+          <td>{{theme}}</td>
+          <td class="number">Section</td>
+          <td class="number">Page</td>
+          <td></td>
+        </tr>
+        {{#each questions}}
+          <tr class="report-row">
+            <td></td>
+            <td class="question">{{question}}</td>
+            {{#if rap_section}}
+              <td class="number">{{rap_section}}</td>
+            {{else}}
+              <td class="number false"><i class="material-icons">close</i></td>
+            {{/if}}
+            {{#if rap_page}}
+              <td class="number">{{rap_page}}</td>
+            {{else}}
+              <td class="number false"><i class="material-icons">close</i></td>
+            {{/if}}
+            <td></td>
+          </tr>
+        {{/each}}
+      {{/each}}
+    </script>
+    <!-- / handlebars template -->
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script src="/scripts/vendor/jquery-2.1.4.min.js"></script>
+  <script src="/scripts/vendor/handlebars.min.js"></script>
+  <script src="/scripts/firebase.js"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
+
+
+

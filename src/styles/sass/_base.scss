@@ -253,3 +253,60 @@ input[type="text"] {
     background-color: lighten($main-color, 6);
   }
 }
+
+.report {
+  .section-title {
+
+    td {
+      border-bottom: 1px solid $main-color;
+      border-top: 1px solid $main-color;
+      background-color: rgba($main-color, .1);
+      color: $main-color;
+      font-weight: 400;
+      text-transform: uppercase;
+      vertical-align: top;
+    }
+  }
+
+  th {
+    background-color: rgba($main-color, .3);
+    color: $main-color;
+    font-weight: 500;
+  }
+
+  th,
+  td {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  td {
+    color: rgba(black, .8);
+  }
+
+  th:first-child,
+  th:last-child,
+  td:first-child,
+  td:last-child {
+    width: 10%;
+  }
+
+  td.number {
+    text-align: right;
+    vertical-align: top;
+  }
+
+  td.number.false i {
+    color: $red;
+  }
+
+  .report-row:nth-of-type(even) {
+    background-color: rgba(black, .03);
+  }
+
+  td.question {
+    padding-right: 120px;
+  }
+
+}
