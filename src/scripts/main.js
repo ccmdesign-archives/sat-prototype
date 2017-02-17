@@ -54,11 +54,12 @@ $(document).ready(function () {
   firebase.auth().onAuthStateChanged(function(user) {
     // Ignore token refresh events
     if (user && currentUserId === user.uid) {
-      return;
+      return false;
     }
 
     if (user) {  // User logged in
       currentUserId = user.uid;
+      $('#js-report-link').attr('href', './report.html?id=' + user.uid);
       $('#js-splash').hide();
       upsertUser(user.uid, user.displayName, user.email, user.photoURL);
     } else {  // User logged out
@@ -80,5 +81,16 @@ var cleanupUI = function() {
   $('#js-questions-list').html('');
   $('#js-questions-list').removeClass('slick-slider');
   $('#js-questions-list').removeClass('slick-initialized');
+}
 
+function getUrlVars() {
+  var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+  var params = []
+  var hash;
+  for(var i = 0; i < hashes.length; i++) {
+    hash = hashes[i].split('=');
+    params.push(hash[0]);
+    params[hash[0]] = hash[1];
+  }
+  return params;
 }

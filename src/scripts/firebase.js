@@ -65,7 +65,11 @@ var updateUser = function(id, name, email, photoUrl) {
     email: email,
     profile_picture: photoUrl
   });
-  loadQuestions(id);
+  if ($('#js-questions-map').length) {
+    loadQuestions(id);
+  } else if ($('#js-report').length) {
+    loadReport();
+  }
 }
 
 function upsertUser(id, name, email, photoUrl) {
@@ -81,47 +85,43 @@ function upsertUser(id, name, email, photoUrl) {
 
 var loadQuestions = function(userId) {
   db.ref('users/' + userId + '/questions').once('value', function(snapshot) {
-    var renderedHtml;
-    var template;
-    var context;
-    var source;
+    var source = $('#js-map-template').html();
+    var template = Handlebars.compile(source);
+    var context = {'questions': snapshot.val()}
+    var renderedHtml = template(context);
+    $('#js-questions-map').html(renderedHtml);
 
-    if ($('#js-questions-map').length) {
-      source = $('#js-map-template').html();
-      template = Handlebars.compile(source);
-      context = {'questions': snapshot.val()}
-      renderedHtml = template(context);
-      $('#js-questions-map').html(renderedHtml);
+    source = $('#js-list-template').html();
+    template = Handlebars.compile(source);
+    context = {questions: snapshot.val()}
+    renderedHtml = template(context);
+    $('#js-questions-list').html(renderedHtml);
 
-      source = $('#js-list-template').html();
-      template = Handlebars.compile(source);
-      context = {'questions': snapshot.val()}
-      renderedHtml = template(context);
-      $('#js-questions-list').html(renderedHtml);
+    $('#js-questions-list').slick({
+      arrows: true,
+      autoplay: false,
+      infinite: false,
+      prevArrow: '<div class="arrow arrow-prev"><i class="material-icons">keyboard_arrow_left</i></div>',
+      nextArrow: '<div class="arrow arrow-next"><i class="material-icons">keyboard_arrow_right</i></div>'
+    });
 
-      $('#js-questions-list').slick({
-        arrows: true,
-        autoplay: false,
-        infinite: false,
-        prevArrow: '<div class="arrow arrow-prev"><i class="material-icons">keyboard_arrow_left</i></div>',
-        nextArrow: '<div class="arrow arrow-next"><i class="material-icons">keyboard_arrow_right</i></div>'
-      });
-
-      $('#js-questions-list').on('afterChange', function(slick, currentSlide) {
-        $('.current').removeClass('current');
-        $('#js-map-col-' + currentSlide.currentSlide).addClass('current');
-      });
-    }
-
-    if ($('#js-report').length) {
-      source = $('#js-report-template').html();
-      template = Handlebars.compile(source);
-      context = {'questions': snapshot.val()}
-      renderedHtml = template(context);
-      $('#js-report').html(renderedHtml);
-    }
-  })
+    $('#js-questions-list').on('afterChange', function(slick, currentSlide) {
+      $('.current').removeClass('current');
+      $('#js-map-col-' + currentSlide.currentSlide).addClass('current');
+    });
+  });
 };
+
+var loadReport = function() {
+  var userIdReport = getUrlVars().id;
+  db.ref('users/' + userIdReport + '/questions').once('value', function(snapshot) {
+    var source = $('#js-report-template').html();
+    var template = Handlebars.compile(source);
+    var context = {'questions': snapshot.val()}
+    var renderedHtml = template(context);
+    $('#js-report').html(renderedHtml);
+  });
+}
 
 var answerQuestion = function(sectionId, questionId, answer) {
   db.ref('users/' + currentUserId + '/questions/' + sectionId + '/questions/' + questionId).update({
@@ -130,7 +130,6 @@ var answerQuestion = function(sectionId, questionId, answer) {
 };
 
 var setSectionNumber = function(sectionId, questionId, number) {
-  debugger;
   db.ref('users/' + currentUserId + '/questions/' + sectionId + '/questions/' + questionId).update({
     rap_section: number
   });

@@ -16,10 +16,20 @@
 </head>
 
 <body>
-  <main role="main"> <!-- main content starts here -->
+  <!-- Splash screen -->
+  <div id="js-splash" class="splash">
+    <h3 class="logo">SAT Prototype</h3>
+    <div>
+      <button id="js-sign-in-button" class="button2">Sign in with Google</button>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main role="main">
     <div class="top-bar">
       <h1>Self Assessment Tool</h1>
       <a href="#" class="user" style="background-image: url('./images/paul.jpg')"></a>
+      <button id="js-sign-out-button" class="button2">Sign Out</button>
     </div>
     <table id="js-report" class="report"></table>
     <!-- # handlebars template -->
