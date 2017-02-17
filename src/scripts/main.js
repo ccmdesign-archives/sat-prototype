@@ -27,6 +27,22 @@ $(document).ready(function () {
     return false;
   });
 
+  $('#js-questions-list').on('change', '.js-rap-section-input', function() {
+    var target = $(this).closest('.question-item');
+    var sectionId = target.data('section-id');
+    var questionId = target.data('question-id');
+    setSectionNumber(sectionId, questionId, $(this).val());
+    return false;
+  });
+
+  $('#js-questions-list').on('change', '.js-rap-page-input', function() {
+    var target = $(this).closest('.question-item');
+    var sectionId = target.data('section-id');
+    var questionId = target.data('question-id');
+    setPageNumber(sectionId, questionId, $(this).val());
+    return false;
+  });
+
   $('#js-sign-in-button').click(function() {
     signInUser();
   });

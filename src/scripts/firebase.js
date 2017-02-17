@@ -128,3 +128,16 @@ var answerQuestion = function(sectionId, questionId, answer) {
     answer: answer
   });
 };
+
+var setSectionNumber = function(sectionId, questionId, number) {
+  debugger;
+  db.ref('users/' + currentUserId + '/questions/' + sectionId + '/questions/' + questionId).update({
+    rap_section: number
+  });
+};
+
+var setPageNumber = function(sectionId, questionId, number) {
+  db.ref('users/' + currentUserId + '/questions/' + sectionId + '/questions/' + questionId).update({
+    rap_page: number
+  });
+};
