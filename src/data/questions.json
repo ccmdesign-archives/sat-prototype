@@ -3,70 +3,18 @@
     "theme": "Project Description",
     "questions": [
       {
-        "question": "Does the FRAP provide a general description of the project",
+        "question": "Does the FRAP provide a general description of the project and its area of influence",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
-        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
-      },
-      {
-        "question": "Does the FRAP define the area of influence of the project",
-        "rap_section": "",
-        "rap_page": "",
-        "answer": "",
-        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+        "guidance": "The FRAP should provide a general description of the project and its area of influence"
       },
       {
         "question": "Does the FRAP include appropriate maps pictorially locating the project area",
         "rap_section": "",
-        "answer": "",
-        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
-      }
-    ]
-  },
-  {
-    "theme": "Valuation of, and compensation for, losses",
-    "questions": [
-      {
-        "question": "Does the FRAP detail the methodology to be used in valuing losses to determine their full replacement cost.",
-        "rap_section": "",
         "rap_page": "",
         "answer": "",
-        "guidance": "The FRAP should detail the methodology to be used in valuing losses to determine their full replacement cost."
-      },
-      {
-        "question": "Does the FRAP describe the proposed types and levels of compensation under local laws and the supplementary measures required to achieve full replacement cost for lost assets.",
-        "rap_section": "",
-        "answer": "",
-        "guidance": "The FRAP should  describe the proposed types and levels of compensation under local laws and the supplementary measures required to achieve full replacement cost for lost assets."
-      },
-      {
-        "question": "Is a certified professional valuator employed to value asset loss, at full replacement cost, and that such valuations are based upon a detailed local market evaluation study that is written up and justified appropriately in the FRAP.",
-        "rap_section": "",
-        "rap_page": "",
-        "answer": "",
-        "guidance": "It is crucial that a certified professional valuator is detailed local market evaluation study that is written up and justified appropriately in the FRAP. employed to value asset loss, at full replacement cost, and that such valuations are based upon a"
-      },
-      {
-        "question": "Does the FRAP describe in detail the packages of compensation and other resettlement measures which will be provided to ensure that standards of living, income-earning capacity, production levels and overall means of livelihood for all categories of eligible group are improved beyond pre-project levels.",
-        "rap_section": "",
-        "rap_page": "",
-        "answer": "",
-        "guidance": "The FRAP should describe in more detail the packages of compensation and other resettlement measures which will be provided to ensure that standards of living, income-earning capacity, production levels and overall means of livelihood for all categories of eligible group are improved beyond pre-project levels."
-      },
-      {
-        "question": "Does the FRAP include an an entitlements matrix that identifies – all categories of affected people; – all types of loss associated with each category; and – all options for the types of compensation and resettlement assistance to which each category is entitled.\n",
-        "rap_section": "",
-        "rap_page": "",
-        "answer": "",
-        "guidance": "The FRAP should summarize the compensation packages developed, in the form of an entitlements matrix that identifies: – all categories of affected people; – all types of loss associated with each category; and – all options for the types of compensation and resettlement assistance to which each category is entitled.\n"
-      },
-      {
-        "question": "Was the entitlements matrix  disclosed to the affected community and consulted on prior to the finalization of the FRAP. Where relevant, changes made to reflect the articulated views and concerns of the affected community, expressed during the entitlements matrix disclosure and consultation process.",
-        "rap_section": "",
-        "rap_page": "",
-        "answer": "",
-        "guidance": "Prior to the finalization of the FRAP, the entitlements matrix should be disclosed to the affected community and consulted on. Where relevant, changes should be made to the entitlements matrix to reflect the articulated views and concerns of the affected community, expressed during the entitlements matrix disclosure and consultation process."
+        "guidance": "The FRAP should include appropriate maps pictorially locating the project area"
       }
     ]
   },
@@ -74,18 +22,18 @@
     "theme": "Potential Impacts",
     "questions": [
       {
-        "question": "Does the FRAP describe the project components or activities that would give rise to involuntary resettlement, the zone of impact of such activities, and the alternatives considered to avoid or minimize involuntary resettlement.",
+        "question": "Does the FRAP describe the project components or activities that would give rise to involuntary resettlement, the zone of impact of such activities, and the alternatives considered to avoid or minimize involuntary resettlement",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
-        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+        "guidance": "The FRAP should describe the project components or activities that would give rise to involuntary resettlement, the zone of impact of such activities, and the alternatives considered to avoid or minimize involuntary resettlement"
       },
       {
         "question": "Is the “avoid or minimize” process should be clearly and comprehensively demonstrated in the FRAP document",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
-        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+        "guidance": "The “avoid or minimize” process should be clearly and comprehensively demonstrated in the FRAP document"
       }
     ]
   },
@@ -97,21 +45,333 @@
         "rap_section": "",
         "rap_page": "",
         "answer": "",
-        "guidance": "The institutional arrangements within the FRAP executing agency, and the provision of adequate resources to this agency, should be discussed as early as possible, and this institutional framework, together with all associated interagency coordination, should be described in the FRAP."
+        "guidance": "The institutional arrangements within the FRAP executing agency, and the provision of adequate resources to this agency, should be discussed as early as possible, and this institutional framework, together with all associated interagency coordination, should be described in the FRAP"
       },
       {
         "question": "Does the FRAP discuss if adequate resources available in the agencies to carry out the FRAP",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
-        "guidance": "The capacity of the executing agency to implement the FRAP should be evaluated"
+        "guidance": "The capacity of the executing agency to implement the FRAP should also be evaluated"
       },
       {
-        "question": "Does the FRAP identify capacity building measures (with an associated timetable and budget) that will be taken to strengthen this executing agency\"",
+        "question": "Does the FRAP identify capacity building measures (with an associated timetable and budget) that will be taken to strengthen this executing agency",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
-        "guidance": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat blanditiis tenetur sint nesciunt fugit, vitae tempore fugiat! Explicabo modi, dolor autem non, qui et laborum. Inventore, reiciendis deleniti corrupti saepe."
+        "guidance": "Capacity building measures (with an associated timetable and budget) that will be taken to strengthen this executing agency should be laid out"
+      }
+    ]
+  },
+  {
+    "theme": "Community participation",
+    "questions": [
+      {
+        "question": "Does the FRAP describe how the Participation requirements have been fulfilled the obtention of Broad Community Support",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The community participation section of the FRAP should describe how the participation requirements of OS 2 have been fulfilled, and specifically how the requirement for BCS has been accomplished in the project context"
+      },
+      {
+        "question": "Does the FRAP contain explicitly written statement that embodies the agreements reached from the negotiations with affected people, as a guarantee that consultations were conducted in a meaningful way and that BCS was obtained for the involuntary resettlement process being carried out",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "An explicitly written statement should be provided in the FRAP that embodies the agreements reached from the negotiations with affected people, as a guarantee that consultations were conducted in a meaningful way and that BCS was obtained for the involuntary resettlement process being carried out"
+      },
+      {
+        "question": "Does the FRAP demonstrate that all affected parties, including displaced persons, host communities, government representatives, NGOs and other stakeholders have been consulted in a regular manner, and at appropriate points in the resettlement process",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should demonstrate that all affected parties, including displaced persons, host communities, government representatives, NGOs and other stakeholders have been consulted in a regular manner, and at appropriate points in the resettlement process"
+      },
+      {
+        "question": "Does the FRAP should also spell out the specific approach taken to consultation with vulnerable groups, including Indigenous Peoples and those affected by gender vulnerabilities",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should spell out the specific approach taken to consultation with vulnerable groups, including Indigenous Peoples and those affected by gender vulnerabilities"
+      },
+      {
+        "question": "Are the interview minutes and attendance records kept and appended to the FRAP",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "In order to demonstrate that consultation has been adequate in terms of stakeholder participation, regularity and scope of discussion, meeting minutes, focus group minutes, interview minutes and attendance records should be kept and appended to the FRAP"
+      },
+      {
+        "question": "Does the FRAP include a summary of when and where consultations took place and a summary of what was discussed in each consultation, and how the outcomes of the consultations were fed into the resettlement planning process (specifically on issues of forms of compensation, livelihood improvement and resettlement assistance, to relocating as individual families or as part of pre-existing communities, to host site options, to retaining access to cultural property (e.g. places of worship, cemeteries etc.), and to proposed resettlement timings)",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "A summary of when and where the consultations took place should be provided, together with a summary of what was discussed in each consultation, and how the outcomes of the consultations were fed into the resettlement planning process"
+      },
+      {
+        "question": "Does the FRAP contain a detailed description of the grievance redress mechanism that has been developed and implemented, and how this is being continuously monitored and improved",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should demonstrate that the OS 2 requirements related to grievance redress have been fulfilled, by the provision of a detailed description of the grievance redress mechanism that has been developed and implemented, and how this is being continuously monitored and improved"
+      }
+    ]
+  },
+  {
+    "theme": "Integration with host communities",
+    "questions": [
+      {
+        "question": "Does the FRAP demonstrate that a meaningful host community capacity assessment has been carried out, and that potentially negative impacts on host communities and associated issues related to social, economic and cultural integration have been addressed by the project",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should demonstrate that a meaningful host community capacity assessment has been carried out, and that potentially negative impacts on host communities and associated issues related to social, economic and cultural integration have been addressed by the project"
+      },
+      {
+        "question": "Does the FRAP present the outcomes of consultations with host communities, how negative host impacts will be mitigated and financed, and the conflict resolution mechanisms in place to resolve integration issues as they arise",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should present the outcomes of consultations with host communities, how negative host impacts will be mitigated and financed, and the conflict resolution mechanisms in place to resolve integration issues as they arise"
+      },
+      {
+        "question": "Does the FRAP provide details of the measures being taken to augment public services (e.g. education, water, heath and production) in host communities, in order to make them comparable to the services provided to those subject to displacement",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should also provide details of the measures being taken to augment public services (e.g. education, water, heath and production) in host communities, in order to make them comparable to the services provided to those subject to displacement"
+      }
+    ]
+  },
+  {
+    "theme": "Socio-economic studies",
+    "questions": [
+      {
+        "question": "Does the FRAP involve carrying out a detailed socioeconomic survey in order to understand the baseline conditions in existence prior to the implementation of the involuntary resettlement process",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The project should carry out a detailed socioeconomic survey in order to understand the baseline conditions in existence prior to the implementation of the involuntary resettlement process"
+      },
+      {
+        "question": "Does the FRAP detail the results of a baseline survey should include a population census that covers 100% of those facing displacement impacts (including seasonal resource users that may not be present in the project area of influence during the time of the survey), and that gathers information on: ––existing public infrastructure and services; ––production and land tenure systems (including common property and non-title based land ownership or other local allocation systems); ––household organization, ––livelihoods (including natural assets upon which the affected people may depend for a portion of their livelihoods); ––standards of living; and ––gender and age disaggregated information pertaining to the economic, social and cultural conditions of the affected population",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The baseline survey should include a population census that covers 100% of those facing displacement impacts (including seasonal resource users that may not be present in the project area of influence during the time of the survey), and that gathers information on: ––existing public infrastructure and services; ––production and land tenure systems (including common property and non-title based land ownership or other local allocation systems); ––household organization, ––livelihoods (including natural assets upon which the affected people may depend for a portion of their livelihoods); ––standards of living; and ––gender and age disaggregated information pertaining to the economic, social and cultural conditions of the affected population"
+      },
+      {
+        "question": "Does the baseline survey include a detailed asset inventory that covers 100% of those facing displacement impacts, and that seeks to assess the magnitude of the expected losses, both in terms of total and partial losses to individual as well as group assets",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The baseline survey should also include a detailed asset inventory that covers 100% of those facing displacement impacts, and that seeks to assess the magnitude of the expected losses, both in terms of total and partial losses to individual as well as group assets"
+      },
+      {
+        "question": "Does the baseline survey should identify and provide detailed information on disadvantaged or vulnerable individual and groups, for whom special provisions may need to be made",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The baseline survey should identify and provide detailed information on disadvantaged or vulnerable individual and groups, for whom special provisions may need to be made"
+      },
+      {
+        "question": "Does the FRAP include the data collection sheets used to gather the census and asset inventory data, as well as a write up of the aggregate baseline conditions in the affected area, using meaningful statistics and qualitative information to demonstrate these",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should present both the data collection sheets used to gather the census and asset inventory data, as well as a write up of the aggregate baseline conditions in the affected area, using meaningful statistics and qualitative information to demonstrate these"
+      },
+      {
+        "question": "Does the FRAP FRAP should also come together with a detailed database that records, for each displaced individual / household, the data collected from them through the census and asset inventory process",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should come together with a detailed database that records, for each displaced individual / household, the data collected from them through the census and asset inventory process. This database is fundamental to the delineation of compensation and livelihood improvement provisions, and for the subsequent monitoring and evaluation of the resettlement process"
+      },
+      {
+        "question": "Does the FRAP detail the project’s approach to the cut-off date, how host government procedures have been adhered to in this regard, and how information pertaining to the cut-off date has been documented and disseminated throughout the project area prior to taking any action on clearing land or restricting local community access to land",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should detail the project’s approach to the cut-off date, how host government procedures have been adhered to in this regard, and how information pertaining to the cut-off date has been documented and disseminated throughout the project area prior to taking any action on clearing land or restricting local community access to land. Dissemination methods for the cut-off date may include local newspaper advertisements, declarations on the local radio and / or over loud speakers, leaflet distribution, the convening of community meetings etc"
+      }
+    ]
+  },
+  {
+    "theme": "Legal framework including mechanisms for conflicts resolution and appeals",
+    "questions": [
+      {
+        "question": "Does the FRAP contain contain a detailed description of the applicable legal and administrative procedures related to resettlement in the domestic context, including a description of the remedies available to displaced persons in the judicial process, the normal time frame for such procedures, and available alternative dispute resolution mechanisms that may be relevant to the project",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should contain a detailed description of the applicable legal and administrative procedures related to resettlement in the domestic context, including a description of the remedies available to displaced persons in the judicial process, the normal time frame for such procedures, and available alternative dispute resolution mechanisms that may be relevant to the project"
+      },
+      {
+        "question": "Does the FRAP outline any legal steps necessary to ensure the effective implementation of resettlement activities, including a process for recognizing claims to legal rights to land – including claims that derive from customary and traditional law and usage",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should outline any legal steps necessary to ensure the effective implementation of resettlement activities, including a process for recognizing claims to legal rights to land – including claims that derive from customary and traditional law and usage"
+      },
+      {
+        "question": "Does the FRAP detail the international standards to which the resettlement operation is seeking to adhere, how these align with / differ from domestic legislative requirements, and how the gaps between the two are to be addressed in the project context",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should detail the international standards to which the resettlement operation is seeking to adhere, how these align with / differ from domestic legislative requirements, and how the gaps between the two are to be addressed in the project context"
+      }
+    ]
+  },
+  {
+    "theme": "Eligibility",
+    "questions": [
+      {
+        "question": "Does the FRAP provide a detailed outline of the eligibility criteria being used in the project context; namely eligibility criteria that define all affected people and outlines their eligibility (or lack thereof) for compensation and other resettlement assistance",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should provide a detailed outline of the eligibility criteria being used in the project context; namely eligibility criteria that define all affected people and outlines their eligibility (or lack thereof) for compensation and other resettlement assistance"
+      }
+    ]
+  },
+  {
+    "theme": "Valuation of, and compensation for, losses",
+    "questions": [
+      {
+        "question": "Does the FRAP detail the methodology to be used in valuing losses to determine their full replacement cost",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should detail the methodology to be used in valuing losses to determine their full replacement cost"
+      },
+      {
+        "question": "Does the FRAP describe the proposed types and levels of compensation under local laws and the supplementary measures required to achieve full replacement cost for lost assets",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should  describe the proposed types and levels of compensation under local laws and the supplementary measures required to achieve full replacement cost for lost assets"
+      },
+      {
+        "question": "Is a certified professional valuator employed to value asset loss, at full replacement cost, and that such valuations are based upon a detailed local market evaluation study that is written up and justified appropriately in the FRAP",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "It is crucial that a certified professional valuator is detailed local market evaluation study that is written up and justified appropriately in the FRAP. employed to value asset loss, at full replacement cost, and that such valuations are based upon a"
+      },
+      {
+        "question": "Does the FRAP describe in detail the packages of compensation and other resettlement measures which will be provided to ensure that standards of living, income-earning capacity, production levels and overall means of livelihood for all categories of eligible group are improved beyond pre-project levels",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should describe in more detail the packages of compensation and other resettlement measures which will be provided to ensure that standards of living, income-earning capacity, production levels and overall means of livelihood for all categories of eligible group are improved beyond pre-project levels"
+      },
+      {
+        "question": "Does the FRAP include an an entitlements matrix that identifies: ––all categories of affected people; ––all types of loss associated with each category; and ––all options for the types of compensation and resettlement assistance to which each category is entitled",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should summarize the compensation packages developed, in the form of an entitlements matrix that identifies: ––all categories of affected people; ––all types of loss associated with each category; and ––all options for the types of compensation and resettlement assistance to which each category is entitled"
+      },
+      {
+        "question": "Was the entitlements matrix  disclosed to the affected community and consulted on prior to the finalization of the FRAP. Where relevant, changes made to reflect the articulated views and concerns of the affected community, expressed during the entitlements matrix disclosure and consultation process",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "Prior to the finalization of the FRAP, the entitlements matrix should be disclosed to the affected community and consulted on. Where relevant, changes should be made to the entitlements matrix to reflect the articulated views and concerns of the affected community, expressed during the entitlements matrix disclosure and consultation process"
+      }
+    ]
+  },
+  {
+    "theme": "Identification of alternative sites and selection of resettlement site(s), site preparation, and relocation",
+    "questions": [
+      {
+        "question": "Does the FRAP  detail the institutional and technical arrangements for identifying and preparing resettlement sites that have a combination of productive potential, locational advantages, and other factors that are at least comparable to those being lost",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should detail the institutional and technical arrangements for identifying and preparing resettlement sites that have a combination of productive potential, locational advantages, and other factors that are at least comparable to those being lost"
+      },
+      {
+        "question": "Does the FRAP detail the procedures for physical relocation, including timetables for site preparation and transfer, and the forms of support which will be provided by the project to facilitate the physical relocation process (e.g. provision of trucks, boxes for packing etc.)",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should detail the project to facilitate the physical relocation process (e.g. provision of trucks, boxes for packing etc.). procedures for physical relocation, including timetables for site preparation and transfer, and the forms of support which will be provided by the"
+      },
+      {
+        "question": "Does the FRAP detail any measures being implemented to prevent influx of ineligible persons at the selected sites, together with the legal arrangements being put in place for regularizing tenure and transferring titles to the displaced persons",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should detail any measures being implemented to prevent influx of ineligible persons at the selected sites, together with the legal arrangements being put in place for regularizing tenure and transferring titles to the displaced persons"
+      }
+    ]
+  },
+  {
+    "theme": "Shelter, infrastructure, and social services",
+    "questions": [
+      {
+        "question": "Does the FRAP provide detailed plans to provide or finance housing, infrastructure (e.g. roads, water supply etc.) and social services (schools, health services), plans to ensure comparable services to host populations, and plans for any necessary additional site development",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should provide detailed plans to provide or finance housing, infrastructure (e.g. roads, water supply etc.) and social services (schools, health services), plans to ensure comparable services to host populations, and plans for any necessary additional site development"
+      }
+    ]
+  },
+  {
+    "theme": "Environmental protection",
+    "questions": [
+      {
+        "question": "Does the FRAP provide an assessment of the environmental impacts of the proposed resettlement and measures to mitigate and manage these impacts",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should provide an assessment of the environmental impacts of the proposed resettlement and measures to mitigate and manage these impacts"
+      }
+    ]
+  },
+  {
+    "theme": "Implementation Schedule",
+    "questions": [
+      {
+        "question": "Does the FRAP provide an implementation schedule covering all resettlement activities, from preparation through implementation, including target dates for achievement of expected benefits to displaced people and host communities, and target dates for terminating the various forms of assistance",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should provide an implementation schedule covering all resettlement activities, from preparation through implementation, including target dates for achievement of expected benefits to displaced people and host communities, and target dates for terminating the various forms of assistance"
+      }
+    ]
+  },
+  {
+    "theme": "Costs and Budget",
+    "questions": [
+      {
+        "question": "Does the FRAP provide detailed tables indicating the breakdown of cost estimates for all resettlement activities, including allowances for inflation and other contingencies, a timetable for expenditures, sources of funds, and arrangements for the timely flow of funds",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should provide detailed tables indicating the breakdown of cost estimates for all resettlement activities, including allowances for inflation and other contingencies, a timetable for expenditures, sources of funds, and arrangements for the timely flow of funds"
+      }
+    ]
+  },
+  {
+    "theme": "Monitoring and Evaluation",
+    "questions": [
+      {
+        "question": "Does the FRAP include arrangements for monitoring of resettlement activities by the implementing agency, supplemented by independent third party monitors as appropriate including timing of activities, data collection modalities, monitoring indicators, and documentation",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should include arrangements for monitoring of resettlement activities by the implementing agency, supplemented by independent third party monitors as appropriate. The section should lay out the timing of monitoring activities (including quarterly reviews, in-depth reviews of mid-term progress etc.) and should be consistent with overall project scheduling.  This section should also describe how sufficient monitoring information will be obtained, what the performance monitoring indicators will be, and how the monitoring outcomes will be recorded and documented"
+      },
+      {
+        "question": "Does the FRAP explain that an independent ex-post evaluation – in the form of a FRAP completion audit or FRAP implementation completion report – will be carried out by the borrower or client and the Bank. and include relevant information in the Project Completion Report (PCR). It should be clarified that this PCR will be followed by the Bank’s own PCR, and a commitment should be made in the FRAP that, if either of these assessments reveals that any key objectives of the FRAP were not achieved, follow-up measures shall be developed to remedy the situation",
+        "rap_section": "",
+        "rap_page": "",
+        "answer": "",
+        "guidance": "The FRAP should explain that an independent ex-post evaluation – in the form of a FRAP completion audit or FRAP implementation completion report – will be carried out by the borrower or client and the Bank - and include relevant information in the Project Completion Report (PCR). It should be clarified that this PCR will be followed by the Bank’s own PCR, and a commitment should be made in the FRAP that, if either of these assessments reveals that any key objectives of the FRAP were not achieved, follow-up measures shall be developed to remedy the situation"
       }
     ]
   }
