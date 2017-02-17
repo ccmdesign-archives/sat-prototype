@@ -60,12 +60,14 @@ $(document).ready(function () {
     if (user) {  // User logged in
       currentUserId = user.uid;
       $('#js-report-link').attr('href', './report.html?id=' + user.uid);
+      $('#js-loading').show();
       $('#js-splash').hide();
       upsertUser(user.uid, user.displayName, user.email, user.photoURL);
     } else {  // User logged out
       cleanupUI();
       currentUserId = null;
       $('#js-splash').show();
+      $('#js-loading').hide();
     }
   });
 });

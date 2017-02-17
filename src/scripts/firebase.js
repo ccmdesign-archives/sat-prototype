@@ -47,7 +47,6 @@ var signOutUser = function() {
 
 var insertUser = function(id, name, email, photoUrl) {
   $.get('../data/questions.json', function(data) {
-    debugger;
     var user = {
       name: name,
       email: email,
@@ -109,6 +108,8 @@ var loadQuestions = function(userId) {
       $('.current').removeClass('current');
       $('#js-map-col-' + currentSlide.currentSlide).addClass('current');
     });
+
+    $('#js-loading').hide();
   });
 };
 

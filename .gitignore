@@ -1,4 +1,5 @@
-.sass-cache
 node_modules
 firebase-debug.log
 .firebaserc
+src/styles/main.css.map
+src/styles/.sass-cache
