@@ -43,6 +43,16 @@ $(document).ready(function () {
     return false;
   });
 
+  $('#js-reset-button').click(function() {
+    resetForm();
+  });
+
+  $(document).on('change', '.js-not-relevant', function() {
+    var sectionId = $(this).data('section-id');
+    var value = $(this).val() === 'on';
+    setRelevance(sectionId, value);
+  });
+
   $('#js-sign-in-button').click(function() {
     signInUser();
   });

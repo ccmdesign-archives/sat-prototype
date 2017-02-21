@@ -26,14 +26,27 @@
   <div id="js-splash" class="splash">
     <h3 class="logo">SAT Prototype</h3>
     <div>
+      <h3>Resettlement Action Plan – Self-Assessment Tool</h3>
+      <h2>(RAP-SAT)</h2>
+
+      <p>
+        Welcome to the RAP-SAT portal, an online self-assessment tool to assess compliance of a full resettlement action plan (FRAP) with the African Development Bank (AfDB) policy on involuntary resettlement (Operational Safeguard 2). Who is it for: The RAP-SAT is intended to be used by project sponsors and/or their consultants planning or implementing a FRAP seeking to comply with AfDB operational requirements. What does it do: The RAP-SAT provides a questionnaire based self-assessment tool covering all the required areas a FRAP should address in order to be compliant with AfDB operational requirements. The RAP-SAT also provides guidance to address missing areas. Upon completion of the RAP-SAT the self-assessor can obtain a summary report which indicates all responses provided and compliance with the requirements. The report can be submitted to the AfDB for review along with the draft RAP documentation. What is does not do: The RAP-SAT allows project sponsors and/or their consultant to assess the compliance of their RAP documentation with AfDB requirements. It is intended to help identify missing areas in view of improving the documentation. It does not in any way substitute the review carried out by the AfDB environmental and social specialists. How does it work: To start using the RAP-SAT, click the button below and login using google sign-in information (gmail). The information is strictly confidential and login is only required for the self-assessor to access the information already entered, without having to complete the entire questionnaire each time.
+      </p>
+
       <button id="js-sign-in-button" class="button2">Sign in with Google</button>
+
+      <p>* The guidance provided in the RAP-SAT is based on AfDB OS2 Guidance Materials on.</p>
+
+      <p>Resettlement Action Plans. The guidance material can be accessed online here.</p>
+
+      <p>** This site is a beta version of the RAP-SAT.</p>
     </div>
   </div>
 
   <!-- Content -->
   <main role="main"> <!-- main content starts here -->
     <div class="top-bar">
-      <h1>Self Assessment Tool</h1>
+      <h1>RAP-SAT</h1>
       <!-- # handlebars template -->
       <div id="js-questions-map" class="map"></div>
       <script id="js-map-template" type="text/x-handlebars-template">
@@ -47,6 +60,7 @@
       </script>
       <!-- / handlebars template -->
       <a id="js-report-link" href="" class="button2">Report</a>
+      <button id="js-reset-button" class="button2">Reset</button>
       <button id="js-sign-out-button" class="button2">Sign Out</button>
     </div>
 
@@ -60,6 +74,10 @@
         <div id="{{@index}}" class="section">
           <header class="section-header">
             <h2>{{theme}}</h2>
+            {{#if optional}}
+              <p>if not relevant, mark not applicable</p>
+              <input id="js-not-relevant-{{@index}}" class="js-not-relevant" type="checkbox" data-section-id="{{@index}}" {{#if not_relevant}}checked{{/if}}> <label for="js-not-relevant-{{@index}}">Not applicable</label>
+            {{/if}}
           </header>
           {{#each questions}}
             <div id="{{@../index}}-{{@index}}" class="question-item {{#if answer}}question-{{answer}}{{/if}}" data-question-id="{{@key}}" data-section-id="{{@../key}}">

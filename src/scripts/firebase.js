@@ -54,8 +54,8 @@ var insertUser = function(id, name, email, photoUrl) {
       questions: data
     }
     db.ref('users/' + id).set(user);
+    loadQuestions(id);
   })
-
 }
 
 var updateUser = function(id, name, email, photoUrl) {
@@ -115,12 +115,14 @@ var loadQuestions = function(userId) {
 
 var loadReport = function() {
   var userIdReport = getUrlVars().id;
-  db.ref('users/' + userIdReport + '/questions').once('value', function(snapshot) {
+  db.ref('users/' + userIdReport).once('value', function(snapshot) {
+    var data = snapshot.val();
     var source = $('#js-report-template').html();
     var template = Handlebars.compile(source);
-    var context = {'questions': snapshot.val()}
+    var context = {questions: data.questions, username: data.name}
     var renderedHtml = template(context);
     $('#js-report').html(renderedHtml);
+    $('#js-loading').hide();
   });
 }
 
@@ -140,4 +142,17 @@ var setPageNumber = function(sectionId, questionId, number) {
   db.ref('users/' + currentUserId + '/questions/' + sectionId + '/questions/' + questionId).update({
     rap_page: number
   });
+};
+
+var setRelevance = function(sectionId, value) {
+  db.ref('users/' + currentUserId + '/questions/' + sectionId).update({
+    not_relevant: value
+  });
+};
+
+var resetForm = function() {
+  $.get('../data/questions.json', function(data) {
+    db.ref('users/' + currentUserId).update({questions: data});
+    location.reload();
+  })
 };
