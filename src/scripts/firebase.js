@@ -99,6 +99,7 @@ var loadQuestions = function(userId) {
     $('#js-questions-list').slick({
       arrows: true,
       autoplay: false,
+      adaptiveHeight: true,
       infinite: false,
       prevArrow: '<div class="arrow arrow-prev"><i class="material-icons">keyboard_arrow_left</i></div>',
       nextArrow: '<div class="arrow arrow-next"><i class="material-icons">keyboard_arrow_right</i></div>'
