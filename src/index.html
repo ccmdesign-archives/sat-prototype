@@ -75,8 +75,7 @@
           <header class="section-header">
             <h2>{{theme}}</h2>
             {{#if optional}}
-              <p>if not relevant, mark not applicable</p>
-              <input id="js-not-relevant-{{@index}}" class="js-not-relevant" type="checkbox" data-section-id="{{@index}}" {{#if not_relevant}}checked{{/if}}> <label for="js-not-relevant-{{@index}}">Not applicable</label>
+              <div class="checkbox-button"><input id="js-not-relevant-{{@index}}" class="js-not-relevant" type="checkbox" data-section-id="{{@index}}" {{#if not_relevant}}checked{{/if}}> <label for="js-not-relevant-{{@index}}">NOT RELEVANT</label></div>
             {{/if}}
           </header>
           {{#each questions}}
