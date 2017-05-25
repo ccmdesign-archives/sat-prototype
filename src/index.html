@@ -29,20 +29,45 @@
         <h3>Self-Assessment Tool</h3>
       </header>
       <section>
-        <p>Welcome to the RAP-SAT portal, an online self-assessment tool to assess compliance of a full resettlement action plan (FRAP) with the African Development Bank (AfDB) policy on involuntary resettlement (Operational Safeguard 2).</p>
-        <p><strong>Who is it for:</strong> The RAP-SAT is intended to be used by project sponsors and/or their consultants planning or implementing a FRAP seeking to comply with AfDB operational requirements.</p>
-        <p><strong>What does it do:</strong> The RAP-SAT provides a questionnaire based self-assessment tool covering all the required areas a FRAP should address in order to be compliant with AfDB operational requirements. The RAP-SAT also provides guidance to address missing areas. Upon completion of the RAP-SAT the self-assessor can obtain a summary report which indicates all responses provided and compliance with the requirements. The report can be submitted to the AfDB for review along with the draft RAP documentation.</p>
-        <p><strong>What is does not do:</strong> The RAP-SAT allows project sponsors and/or their consultant to assess the compliance of their RAP documentation with AfDB requirements. It is intended to help identify missing areas in view of improving the documentation. <strong>It does not in any way substitute the review carried out by the AfDB environmental and social specialists.</strong></p>
-        <p><strong>How does it work:</strong> To start using the RAP-SAT, click the button below and login using google sign-in information (gmail). The information is strictly confidential and login is only required for the self-assessor to access the information already entered, without having to complete the entire questionnaire each time.</p>
-        <p class="signin">
-          <button id="js-sign-in-button" class="button2">Sign in with Google</button>    
+        <p>
+          Welcome to the RAP-SAT portal, an online self-assessment tool to assess compliance of a full resettlement
+          action plan (FRAP) with the African Development Bank (AfDB) policy on involuntary resettlement (Operational
+          Safeguard 2).
         </p>
-        
+        <p>
+          <strong>Who is it for:</strong> The RAP-SAT is intended to be used by project sponsors and/or their
+          consultants planning or implementing a FRAP seeking to comply with AfDB operational requirements.
+        </p>
+        <p>
+          <strong>What does it do:</strong> The RAP-SAT provides a questionnaire based self-assessment tool covering all
+          the required areas a FRAP should address in order to be compliant with AfDB operational requirements. The
+          RAP-SAT also provides guidance to address missing areas. Upon completion of the RAP-SAT the self-assessor can
+          obtain a summary report which indicates all responses provided and compliance with the requirements. The
+          report can be submitted to the AfDB for review along with the draft RAP documentation.
+        </p>
+        <p>
+          <strong>What is does not do:</strong> The RAP-SAT allows project sponsors and/or their consultant to assess
+          the compliance of their RAP documentation with AfDB requirements. It is intended to help identify missing
+          areas in view of improving the documentation. It does not in any way substitute the review carried out by the
+          AfDB environmental and social specialists.</strong>
+        </p>
+        <p>
+          <strong>How does it work:</strong> To start using the RAP-SAT, click the button below and login using google
+          sign-in information (gmail). <strong>The RAP-SAT should take approximately 30-40 minutes to complete.</strong>
+          The information is strictly confidential and login is only required for the self-assessor to access the
+          information already entered, without having to complete the entire questionnaire each time.
+        </p>
+        <p class="signin">
+          <button id="js-sign-in-button" class="button2">Sign in with Google</button>
+        </p>
       </section>
       <footer>
-        <p>* The guidance provided in the RAP-SAT is based on AfDB OS2 Guidance Materials on. Resettlement Action Plans. The guidance material can be accessed online here.</p>
+        <p>
+          * The guidance provided in the RAP-SAT is based on AfDB OS2 Guidance Materials on Resettlement Action Plans.
+          The guidance material can be accessed <a href="https://www.afdb.org/en/topics-and-sectors/topics/quality-assurance-results/safeguards-and-sustainability-series/">online here</a>.
+        </p>
         <p>** This site is a beta version of the RAP-SAT.</p>
-      </footer>      
+      </footer>
   </div>
 
   <!-- Content -->
@@ -72,18 +97,19 @@
     <!-- # handlebars template -->
     <div id="js-questions-list" class="question-list"></div>
     <script id="js-list-template" type="text/x-handlebars-template">
-      {{#each questions}}
-        <div id="{{@index}}" class="section">
+      {{#each sections}}
+        <div id="{{@index}}" class="section" data-section-id="{{@key}}">
           <header class="section-header">
-            <h2>{{theme}}</h2>
+            <h2>{{theme}} ({{counter @index}}/{{../totalSections}})</h2>
             {{#if optional}}
               <div class="checkbox-button"><input id="js-not-relevant-{{@index}}" class="js-not-relevant" type="checkbox" data-section-id="{{@index}}" {{#if not_relevant}}checked{{/if}}> <label for="js-not-relevant-{{@index}}">NOT RELEVANT</label></div>
+              <textarea class="js-justification" cols="50" rows="3" {{#if not_relevant}}style="display: none"{{/if}}>{{justification}}</textarea>
             {{/if}}
           </header>
           {{#each questions}}
             <div id="{{@../index}}-{{@index}}" class="question-item {{#if answer}}question-{{answer}}{{/if}}" data-question-id="{{@key}}" data-section-id="{{@../key}}">
               <div class="question wrapper">
-                <p>{{question}}</p>
+                <p>{{counter @index}}. {{question}}</p>
               </div>
               <div class="controls">
                 <button class="button green js-yes"><i class="material-icons">check</i></button>
@@ -99,8 +125,23 @@
               </div>
             </div>
           {{/each}}
+          <div>
+            <p>Additional comments (max 150)</p>
+            <textarea class="js-additional-info" maxlength="150">{{additional_info}}</textarea>
+          </div>
         </div>
       {{/each}}
+      <div class="section">
+        <h1>SELF-ASSESSMENT COMPLETED</h1>
+        <p>
+          Congratulations, you have completed the RAP self-assessment. You may now click on the REPORT button up top to
+          view all your responses. Once all the areas are appropriately covered in your RAP, you can save the REPORT in
+          .pdf or Web Archive format and submit it to the AfDB with your RAP documentation as part of the review process
+          (in the REPORT section, go to File/Save As for saving options). Your questionnaire responses will remain
+          stored and linked to your login email address until you press the RESET button on the top right hand corner of
+          the screen, should you wish to start over the questionnaire or assess another RAP.
+        </p>
+      </div>
     </script>
     <!-- / handlebars template -->
   </main>
@@ -113,6 +154,4 @@
   <script src="/scripts/main.js"></script>
 </body>
 </html>
-
-
 

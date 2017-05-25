@@ -43,14 +43,37 @@ $(document).ready(function () {
     return false;
   });
 
-  $('#js-reset-button').click(function() {
-    resetForm();
+  $('#js-questions-list').on('change', '.js-additional-info', function() {
+    var target = $(this).closest('.section');
+    var sectionId = target.data('section-id');
+    setAdditionalInfo(sectionId, $(this).val());
+    return false;
   });
 
   $(document).on('change', '.js-not-relevant', function() {
     var sectionId = $(this).data('section-id');
-    var value = $(this).val() === 'on';
+    var value = $(this).is(':checked');
+
+    if (value) {
+      $(this).closest('.section-header').find('.js-justification').hide();
+      $(this).closest('.section-header').find('.js-justification').val('');
+      setJustification(sectionId, '');
+    } else {
+      $(this).closest('.section-header').find('.js-justification').show();
+    }
+
     setRelevance(sectionId, value);
+  });
+
+  $('#js-questions-list').on('change', '.js-justification', function() {
+    var target = $(this).closest('.section');
+    var sectionId = target.data('section-id');
+    setJustification(sectionId, $(this).val());
+    return false;
+  });
+
+  $('#js-reset-button').click(function() {
+    resetForm();
   });
 
   $('#js-sign-in-button').click(function() {
@@ -106,3 +129,11 @@ function getUrlVars() {
   }
   return params;
 }
+
+
+// Handlebar helpers
+// -----------------
+
+Handlebars.registerHelper("counter", function(index) {
+  return index + 1;
+});

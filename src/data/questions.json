@@ -3,6 +3,8 @@
     "theme": "Project Description",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP provide a general description of the project and its area of influence",
@@ -24,6 +26,8 @@
     "theme": "Potential Impacts",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP describe the project components or activities that would give rise to involuntary resettlement, the zone of impact of such activities, and the alternatives considered to avoid or minimize involuntary resettlement",
@@ -45,6 +49,8 @@
     "theme": "Organizational Responsibility / Institutional Framework",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP detail the organizational responsibilites and instritutional framework",
@@ -73,14 +79,9 @@
     "theme": "Community participation",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
-      {
-        "question": "Does the FRAP describe how the participation requirements have been fulfilled",
-        "rap_section": "",
-        "rap_page": "",
-        "answer": "",
-        "guidance": "The community participation section of the FRAP should describe how the participation requirements of OS 2 have been fulfilled, and specifically how the requirement for BCS has been accomplished in the project context"
-      },
       {
         "question": "Does the FRAP contain explicitly written statement that embodies the agreements reached from the negotiations with affected people, as a guarantee that consultations were conducted in a meaningful way and that Broad Community Support (BCS) was obtained for the involuntary resettlement process being carried out.",
         "rap_section": "",
@@ -129,6 +130,8 @@
     "theme": "Integration with host communities",
     "optional": true,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP demonstrate that a meaningful host community capacity assessment has been carried out, and that potentially negative impacts on host communities and associated issues related to social, economic and cultural integration have been addressed by the project",
@@ -157,6 +160,8 @@
     "theme": "Socio-economic studies",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP include a detailed socioeconomic survey in order to understand the baseline conditions in existence prior to the implementation of the involuntary resettlement process",
@@ -180,7 +185,7 @@
         "guidance": "The baseline survey should also include a detailed asset inventory that covers 100% of those facing displacement impacts, and that seeks to assess the magnitude of the expected losses, both in terms of total and partial losses to individual as well as group assets"
       },
       {
-        "question": "Does the baseline survey should identify and provide detailed information on disadvantaged or vulnerable individual and groups, for whom special provisions may need to be made",
+        "question": "Does the baseline survey identify and provide detailed information on disadvantaged or vulnerable individual and groups, for whom special provisions may need to be made",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
@@ -194,7 +199,7 @@
         "guidance": "The FRAP should present both the data collection sheets used to gather the census and asset inventory data, as well as a write up of the aggregate baseline conditions in the affected area, using meaningful statistics and qualitative information to demonstrate these"
       },
       {
-        "question": "Does the FRAP FRAP should also come together with a detailed database that records, for each displaced individual / household, the data collected from them through the census and asset inventory process",
+        "question": "Does the FRAP come together with a detailed database that records, for each displaced individual / household, the data collected from them through the census and asset inventory process",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
@@ -213,6 +218,8 @@
     "theme": "Legal framework including mechanisms for conflicts resolution and appeals",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP contain contain a detailed description of the applicable legal and administrative procedures related to resettlement in the domestic context, including a description of the remedies available to displaced persons in the judicial process, the normal time frame for such procedures, and available alternative dispute resolution mechanisms that may be relevant to the project",
@@ -229,7 +236,7 @@
         "guidance": "The FRAP should outline any legal steps necessary to ensure the effective implementation of resettlement activities, including a process for recognizing claims to legal rights to land – including claims that derive from customary and traditional law and usage"
       },
       {
-        "question": "Does the FRAP detail the international standards to which the resettlement operation is seeking to adhere, how these align with / differ from domestic legislative requirements, and how the gaps between the two are to be addressed in the project context",
+        "question": "Does the FRAP detail the international standards to which the resettlement operation is seeking to adhere (including AfDB ISS), how these align with / differ from domestic legislative requirements, and how the gaps between the two are to be addressed in the project context",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
@@ -241,6 +248,8 @@
     "theme": "Eligibility",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP provide a detailed outline of the eligibility criteria being used in the project context; namely eligibility criteria that define all affected people and outlines their eligibility (or lack thereof) for compensation and other resettlement assistance",
@@ -255,9 +264,11 @@
     "theme": "Valuation of, and compensation for, losses",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
-        "question": "Does the FRAP detail the methodology to be used in valuing losses to determine their full replacement cost",
+        "question": "Does the FRAP detail the methodology to be used in valuing losses to determine their full replacement cost (the market value of the assets plus transaction costs).",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
@@ -304,6 +315,8 @@
     "theme": "Identification of alternative sites and selection of resettlement site(s), site preparation, and relocation",
     "optional": true,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP  detail the institutional and technical arrangements for identifying and preparing resettlement sites that have a combination of productive potential, locational advantages, and other factors that are at least comparable to those being lost",
@@ -332,6 +345,8 @@
     "theme": "Shelter, infrastructure, and social services",
     "optional": true,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP provide detailed plans to provide or finance housing, infrastructure (e.g. roads, water supply etc.) and social services (schools, health services), plans to ensure comparable services to host populations, and plans for any necessary additional site development",
@@ -346,13 +361,15 @@
     "theme": "Environmental protection",
     "optional": true,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
-        "question": "Does the FRAP provide an assessment of the environmental impacts of the proposed resettlement and measures to mitigate and manage these impacts",
+        "question": "Does the FRAP provide an assessment of the environmental impacts of the proposed resettlement site and measures to mitigate and manage these impacts.",
         "rap_section": "",
         "rap_page": "",
         "answer": "",
-        "guidance": "The FRAP should provide an assessment of the environmental impacts of the proposed resettlement and measures to mitigate and manage these impacts"
+        "guidance": "The FRAP should provide an assessment of the environmental impacts of the proposed resettlement site and measures to mitigate and manage these impacts."
       }
     ]
   },
@@ -360,6 +377,8 @@
     "theme": "Implementation Schedule",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP provide an implementation schedule covering all resettlement activities, from preparation through implementation, including target dates for achievement of expected benefits to displaced people and host communities, and target dates for terminating the various forms of assistance",
@@ -374,6 +393,8 @@
     "theme": "Costs and Budget",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP provide detailed tables indicating the breakdown of cost estimates for all resettlement activities, including allowances for inflation and other contingencies, a timetable for expenditures, sources of funds, and arrangements for the timely flow of funds",
@@ -388,6 +409,8 @@
     "theme": "Monitoring and Evaluation",
     "optional": false,
     "not_relevant": false,
+    "justification": "",
+    "additional_info": "",
     "questions": [
       {
         "question": "Does the FRAP include arrangements for monitoring of resettlement activities by the implementing agency, supplemented by independent third party monitors as appropriate including timing of activities, data collection modalities, monitoring indicators, and documentation",

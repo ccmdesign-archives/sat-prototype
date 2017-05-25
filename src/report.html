@@ -33,15 +33,28 @@
   <main role="main">
     <div class="top-bar">
       <h1>RAP-SAT</h1>
-      <a href="#" class="user" style="background-image: url('./images/paul.jpg')"></a>
+      <button class="button2" onclick="window.print()">Save As</button>
       <button id="js-sign-out-button" class="button2">Sign Out</button>
     </div>
-    <table id="js-report" class="report"></table>
+
     <!-- # handlebars template -->
+    <table id="js-report" class="report"></table>
     <script id="js-report-template" type="text/x-handlebars-template">
       <thead>
         <th colspan="5">Report for {{username}}</th>
       </thead>
+
+      <tr>
+        <td></td>
+        <td colspan="3">
+          {{#if completed}}
+            <strong>Score: {{score}}/{{totalQuestions}} - The RAP addresses all key required areas and may be submitted to the AfDB for review.</strong>
+          {{else}}
+            <strong>Score: {{score}}/{{totalQuestions}} - The RAP is missing some key required areas and should be updated before being submitted to the AfDB for review.</strong>
+          {{/if}}
+        </td>
+        <td></td>
+      </tr>
 
       {{#each questions}}
         {{#unless not_relevant}}
@@ -69,6 +82,22 @@
               <td></td>
             </tr>
           {{/each}}
+          <tr class="report-row">
+            <td></td>
+            <td colspan="3">{{additional_info}}</td>
+            <td></td>
+          </tr>
+        {{else}}
+          <tr class="section-title">
+            <td></td>
+            <td colspan="3">{{theme}} (NOT RELEVANT)</td>
+            <td></td>
+          </tr>
+          <tr class="report-row">
+            <td></td>
+            <td class="question" colspan="3">{{justification}}</td>
+            <td></td>
+          </tr>
         {{/unless}}
       {{/each}}
     </script>

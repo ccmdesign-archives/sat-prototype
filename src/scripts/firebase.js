@@ -92,7 +92,7 @@ var loadQuestions = function(userId) {
 
     source = $('#js-list-template').html();
     template = Handlebars.compile(source);
-    context = {questions: snapshot.val()}
+    context = {sections: snapshot.val(), totalSections: snapshot.val().length}
     renderedHtml = template(context);
     $('#js-questions-list').html(renderedHtml);
 
@@ -120,7 +120,26 @@ var loadReport = function() {
     var data = snapshot.val();
     var source = $('#js-report-template').html();
     var template = Handlebars.compile(source);
-    var context = {questions: data.questions, username: data.name}
+    var totalQuestions = 0;
+    var score = 0;
+
+    data.questions.forEach(function(section) {
+      section.questions.forEach(function(question) {
+        totalQuestions += 1;
+
+        if (section.not_relevant || question.answer == 'yes') {
+          score += 1;
+        }
+      });
+    });
+
+    var context = {
+      questions: data.questions,
+      username: data.name,
+      totalQuestions: totalQuestions,
+      score: score,
+      completed: score == totalQuestions
+    }
     var renderedHtml = template(context);
     $('#js-report').html(renderedHtml);
     $('#js-loading').hide();
@@ -148,6 +167,18 @@ var setPageNumber = function(sectionId, questionId, number) {
 var setRelevance = function(sectionId, value) {
   db.ref('users/' + currentUserId + '/questions/' + sectionId).update({
     not_relevant: value
+  });
+};
+
+var setAdditionalInfo = function(sectionId, value) {
+  db.ref('users/' + currentUserId + '/questions/' + sectionId).update({
+    additional_info: value
+  });
+};
+
+var setJustification = function(sectionId, value) {
+  db.ref('users/' + currentUserId + '/questions/' + sectionId).update({
+    justification: value
   });
 };
 
