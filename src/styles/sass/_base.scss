@@ -6,6 +6,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 20px;
+  color: rgba(black, .8);
   letter-spacing: .4px;
 }
 
@@ -330,3 +331,18 @@ input[type="text"] {
 }
 
 .section-header > .checkbox-button {margin-bottom: 15px;}
+
+
+.textarea {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  height: 150px;
+
+  &:focus {
+    outline: 0;
+    background-color: #eee;
+  }
+}
+

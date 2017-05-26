@@ -103,7 +103,7 @@
             <h2>{{theme}} ({{counter @index}}/{{../totalSections}})</h2>
             {{#if optional}}
               <div class="checkbox-button"><input id="js-not-relevant-{{@index}}" class="js-not-relevant" type="checkbox" data-section-id="{{@index}}" {{#if not_relevant}}checked{{/if}}> <label for="js-not-relevant-{{@index}}">NOT RELEVANT</label></div>
-              <textarea class="js-justification" cols="50" rows="3" {{#if not_relevant}}style="display: none"{{/if}}>{{justification}}</textarea>
+              <textarea class="textarea js-justification" cols="50" rows="3" {{#if not_relevant}}style="display: none"{{/if}}>{{justification}}</textarea>
             {{/if}}
           </header>
           {{#each questions}}
@@ -127,7 +127,7 @@
           {{/each}}
           <div>
             <p>Additional comments (max 150)</p>
-            <textarea class="js-additional-info" maxlength="150">{{additional_info}}</textarea>
+            <textarea class="textarea js-additional-info" maxlength="150">{{additional_info}}</textarea>
           </div>
         </div>
       {{/each}}
