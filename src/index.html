@@ -103,7 +103,7 @@
             <h2>{{theme}} ({{counter @index}}/{{../totalSections}})</h2>
             {{#if optional}}
               <div class="checkbox-button"><input id="js-not-relevant-{{@index}}" class="js-not-relevant" type="checkbox" data-section-id="{{@index}}" {{#if not_relevant}}checked{{/if}}> <label for="js-not-relevant-{{@index}}">NOT RELEVANT</label></div>
-              <textarea class="textarea js-justification" cols="50" rows="3" {{#if not_relevant}}style="display: none"{{/if}}>{{justification}}</textarea>
+              <textarea class="textarea js-justification" cols="50" rows="3" {{#unless not_relevant}}style="display: none"{{/unless}}>{{justification}}</textarea>
             {{/if}}
           </header>
           {{#each questions}}
@@ -132,8 +132,8 @@
         </div>
       {{/each}}
       <div class="section">
-        <h1>SELF-ASSESSMENT COMPLETED</h1>
-        <p>
+        <header><h2>SELF-ASSESSMENT COMPLETED</h2></header>
+        <p class="completed-text">
           Congratulations, you have completed the RAP self-assessment. You may now click on the REPORT button up top to
           view all your responses. Once all the areas are appropriately covered in your RAP, you can save the REPORT in
           .pdf or Web Archive format and submit it to the AfDB with your RAP documentation as part of the review process

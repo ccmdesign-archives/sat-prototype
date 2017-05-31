@@ -53,13 +53,12 @@ $(document).ready(function () {
   $(document).on('change', '.js-not-relevant', function() {
     var sectionId = $(this).data('section-id');
     var value = $(this).is(':checked');
-
     if (value) {
+      $(this).closest('.section-header').find('.js-justification').show();
+    } else {
       $(this).closest('.section-header').find('.js-justification').hide();
       $(this).closest('.section-header').find('.js-justification').val('');
       setJustification(sectionId, '');
-    } else {
-      $(this).closest('.section-header').find('.js-justification').show();
     }
 
     setRelevance(sectionId, value);
@@ -89,7 +88,6 @@ $(document).ready(function () {
     if (user && currentUserId === user.uid) {
       return false;
     }
-
     if (user) {  // User logged in
       currentUserId = user.uid;
       $('#js-report-link').attr('href', './report.html?id=' + user.uid);
